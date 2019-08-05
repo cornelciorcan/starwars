@@ -35,8 +35,8 @@ class App extends Component {
                 <div><strong>From: </strong>{film.release_date}</div>
                 <div><strong>Producer: </strong>{film.producer}</div>
                 <div><strong>Characters: </strong>
-                {film.characters.map((urlchar) =>
-                 <li key={urlchar}>{urlchar}</li>)}</div>
+                {film.characters.map((urlchar) => 
+                 <li key={urlchar}><a href={urlchar}>{"'"+urlchar +"'"}</a></li>)}</div>
               </div>
    
             )} )}
